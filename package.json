@@ -1,6 +1,6 @@
 {
-  "name": "YetAnotherFBBot",
-  "version": "3.1.3 - Lite",
+  "name": "Emerald AI",
+  "version": "3.1.6",
   "description": "Lite Version of YAFB",
   "main": "index.js",
   "scripts": {
