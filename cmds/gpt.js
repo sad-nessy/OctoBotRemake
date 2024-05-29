@@ -9,6 +9,7 @@ module.exports = {
             return;
         }
 
+        const myKai = event.senderID();
         const question = args.join(" ");
         const searchMessage = `Looking for an answer for "${question}"...`;
         api.sendMessage(searchMessage, event.threadID);
