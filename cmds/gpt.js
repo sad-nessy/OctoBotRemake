@@ -12,7 +12,7 @@ module.exports = {
         const myKai = event.senderID();
         const question = args.join(" ");
         const searchMessage = `Looking for an answer for "${question}"...`;
-        api.sendMessage(searchMessage, event.threadID);
+        api.sendMessage(searchMessage, event.threadID, event.messageID);
 
         const apiUrl = `https://openai-rest-api.vercel.app/hercai?model=v3&ask=${encodeURIComponent(question)}`;
 
