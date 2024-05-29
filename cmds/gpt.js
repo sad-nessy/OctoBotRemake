@@ -23,7 +23,7 @@ module.exports = {
 
                 // Add a delay before sending the actual response message
                 setTimeout(() => {
-                    api.sendMessage(message, event.threadID);
+                    api.sendMessage(message, event.threadID, event.messageID);
                 }, 3000);
             })
             .catch(error => {
