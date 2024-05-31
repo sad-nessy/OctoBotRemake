@@ -3,5 +3,6 @@
     "dakogOten": "password128",
     "PORT": 21850,
     "WEBVIEW": "https://octobotremake-4kso.onrender.com/",
+    "RESTART_TIME": 30,
     "admin": ["61554572669378"]
 }
