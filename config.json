@@ -1,6 +1,6 @@
 {
     "PREFIX": "-",
-    "dakogOten": "password128",
+    "dakogOten": "kk",
     "PORT": 21850,
     "WEBVIEW": "https://octobotremake-4kso.onrender.com/",
     "RESTART_TIME": 30,
