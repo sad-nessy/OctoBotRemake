@@ -13,8 +13,7 @@ module.exports = {
             return api.sendMessage("Please type a message...", tid, mid);
         }
         try {
-            const res = await axios.get(`https://eurix-api.replit.app/sim?q=${content}`);
-            const respond = res.data.respond;
+            const res = await axios.get(`https://sim-api-wdew.onrender.com/sim?q=${content}`);
             if (res.data.error) {
                 api.sendMessage(`Error: ${res.data.error}`, tid, (error, info) => {
                     if (error) {
@@ -22,7 +21,8 @@ module.exports = {
                     }
                 }, mid);
             } else {
-                api.sendMessage(respond, tid, (error, info) => {
+                const response = res.data.response;
+                api.sendMessage(response, tid, (error, info) => {
                     if (error) {
                         console.error(error);
                     }
